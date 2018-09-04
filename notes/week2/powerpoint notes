@@ -1,0 +1,12 @@
+DOCTYPE, HTML, head and body only get written once
+Tree
+  main trunk--> HTML tag
+  branches--> head (including the title tag) and body tag
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <Title>Title of the document</title>
+
+
+use creativecommons cc search to find images..then open image in new tab and copy that address or save it to ur images folder
