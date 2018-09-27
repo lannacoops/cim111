@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
   <title>Week 4</title>
@@ -8,15 +8,97 @@
 <meta name ="author" content="Alanna" />
 <meta name="keywords" content="basic website">
 <!-- html comment -->
+
+<h1 id:"name">Style Notes</h1>
+
 <style>
 /* CSS comment (this only wokrs here)*/
-body {
+
+  body {
   background-color: orange;
   background-color: #333333;
-  background-color: rgb(0,255,0)
-
+  background-color: rgb(0,255,0);
+  font-family: sans-serif
 }
 
+  h1 {
+  color: blue;
+  background-color: white;
+}
+/*if you specify something about a tag it changes it for all the tags on the website*/
+
+  a{
+    text-decoration: none;
+    color: yellow;
+    font-weight:900;
+  }
+    a:hover{
+      color: black;
+      text-decoration: underline;
+    }
+
+    a:visited{
+      color:red;
+    }
+
+    #name{
+      text-align: center;
+    }
+    /*this goes with the <h1 id="name" shit */
+
+    p{
+      line-height: 100px;
+      text-indent: 20px;
+    }
+
+    li{
+      list-style: none;
+    }
+    /*the none removes the bullets and numbers from the lists */
+    /*to specify further, put a ul or ol in front of the li to make it more specific*/
+
+    .links{
+      color: cyan;
+    }
+    /*overrides the a tag*/
+
+</style>
+</head>
+
+
+THIS WAS STYLISTIC CHANGES MADE TO THE RESUME:
+<style>
+
+body { background-color:#FFB6C1;
+}
+h1 {
+    background-color: #FFB6C1;
+}
+p {
+    background-color: #FFB6C1);
+}
+a{
+  text-decoration: none;
+  color: purple;
+  font-weight:900;
+}
+a:hover{
+  color: black;
+  text-decoration: underline;
+}
+
+a:visited{
+  color:blue;
+}
+
+#name{
+  text-align: center;
+}
+
+
+
+
+</style>
 
 </body>
 </html>

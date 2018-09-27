@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+  body{
+      background: linear-gradient(to bottom, #ffe8d4, #f69d3c);
+      font-family: 'Poppins', sans-serif;
+    }
+
+    a{
+      text-decoration: none;
+      color: purple;
+      font-weight:900;
+    }
+    a:hover{
+      color: black;
+    }
+
+    a:visited{
+      color:blue;
+    }
+
+    #name{
+      text-align: center;
+    }
+
+    h2{
+      text-decoration: underline;
+    }
+
+    address{
+      color: purple;
+    }
+
+  #paragraphchange {
+    border: 1px solid #696969;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px black;
+    }
+
+  #schoolnames{
+    font-weight: bolder;
+    text-decoration: underline;
+  }
+
+  #schoolnames2{
+    font-weight: bolder;
+    text-decoration: underline;
+  }
+
+  #table1{
+    border: 1px solid #696969;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px black;
+  }
+
+  #table2{
+    border: 1px solid #696969;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px black;
+  }
+
+  .list1{
+
+  }
+
+  .h2changes {
+    font-weight; bolder;
+    color: purple;
+  }
