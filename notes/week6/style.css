@@ -1,5 +1,5 @@
 #changeText{
-  color: pink;
+  color: white;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -8,7 +8,73 @@
 }
 #box{
   background-color: pink;
-  width: 190px;
-  height: 190px;
+  width: 200px;
+  height: auto;
   padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: solid;
+  border-width: 5px;
+  border-style: dashed;
+  border-color:red;
+  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin: 50px 50px 50px 50px;
+  margin: 0 auto;
 }
+
+header{
+  background-color: orange;
+  width: 960px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: -20px;
+}
+
+main {
+  background-color: black;
+  width: 960px;
+  height: auto;
+  color: white;
+  margin: 0 auto;
+  margin-top: -20px;
+}
+
+footer{
+  background-color: orange;
+  width: 960px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: -20px;
+}
+
+nav{
+  background-color: pink;
+  width: 300px;
+  margin: 0 auto;
+}
+
+nav ul{
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+nav ul li a:hover{
+  color: gray;
+}
+
+/* when you're doing padding you need to adjust the width and height to be minus 2x the padding so that it evens out*/
