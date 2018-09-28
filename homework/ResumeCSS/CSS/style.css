@@ -87,5 +87,6 @@
 
   .references{
     color: blue;
+    font-style: oblique;
     text-decoration: underline;
   }
