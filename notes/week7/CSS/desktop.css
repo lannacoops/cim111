@@ -1,0 +1,19 @@
+<style>
+
+main{
+  width: 80%;
+  height: 600px;
+  background-color: blue;
+
+}
+  .col {
+    width: 49.5%
+    height: 500px;
+    background-color: aqua;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+
+</body>
+</html>
