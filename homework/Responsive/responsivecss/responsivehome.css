@@ -77,6 +77,8 @@ footer {
   padding-left: 150px;
   font-family: 'Raleway', sans-serif;
   font-size: 25px;
+  color: #FF1493;
+  font-weight: bold;
 }
 
 #grid3{
@@ -100,7 +102,9 @@ footer {
   height: auto;
 }
 
-
+.h2{
+  color: #FF1493
+}
 .images{
   height: 300px;
   display: block;
