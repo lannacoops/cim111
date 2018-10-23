@@ -42,7 +42,11 @@ main {
     background-color: aliceblue;
 }
 
-
+footer {
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+}
 
 #grid1{
   display: grid;

@@ -48,9 +48,8 @@ body{
 }
 
 .images{
-  height: 300px;
-  display: block;
-  margin: 10px auto;
+  height: 100%;
+  width: auto;
 }
 .dukeimages{
   height: 200px;
