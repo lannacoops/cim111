@@ -1,0 +1,59 @@
+@import "responsivehome.css";
+@import "adoptionjourney.css";
+@import "puparazzi.css";
+
+body{
+  background-color: white;
+}
+
+.col{
+  width: 100%;
+  display: block;
+  margin-bottom: 40px;
+}
+
+#grid1{
+  display: grid;
+  grid-template-areas: "col1" "col2";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 100%;
+  text-align: center;
+
+}
+
+#grid2{
+  display: grid;
+  grid-template-areas: "col3" "col4" "col5";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 100%;
+  text-align: center;
+
+}
+
+#grid3{
+  display: grid;
+  grid-template-areas: "col7" "col8" "col9";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 100%;
+  text-align: center;
+
+}
+
+#grid4{
+  display: grid;
+  grid-template-areas: "col10" "col11" "col12";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+.images{
+  height: 300px;
+  display: block;
+  margin: 10px auto;
+}
+.dukeimages{
+  height: 200px;
+  display: block;
+  margin: 10px auto;
+}
