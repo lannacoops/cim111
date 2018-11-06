@@ -6,7 +6,7 @@
   </head>
   <body>
 
-    <h1>Intro to Javascript</h1>
+    <h1 id="changetext">Intro to Javascript</h1>
 
     <script src="js/jquery-3.3.1.min.js"></script>
       <!-- always need to have the jquery before you write the other script -->
@@ -17,6 +17,23 @@
         //all code should be placed below
 
           $("body").css("background-color", "pink");
+          $("h1").css("color", "midnightblue");
+          $("#changetext").css("font-size", "40px")
+          $("#changetext").html("I love javascript!!");
+          //.html changes the actual text that's linked
+
+          $("#changetext").click(function(){
+            $("body").css("background-color", "yellow");
+
+          });//end of change text click
+
+
+
+
+
+
+
+          }
 
 
       });//end of document ready

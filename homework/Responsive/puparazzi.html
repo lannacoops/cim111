@@ -19,7 +19,7 @@
 
 <body>
     <header>
-      <h1>Lanna's Dog Tails</h1>
+      <h1 id=changeText>Lanna's Dog Tails</h1>
       <nav>
         <ul>
           <li><a href="responsivehome.html">Home</a></li>
@@ -33,21 +33,28 @@
 <br>
     <main>
 
+      <img class="images" id="bone" src="images/bone-clipart.png">
+      <div id="boneRecepticle"></div>
+
+      <br>
+
       <section id="grid1">
 
                 <div id="col1">
-                  <img class="images" src="images/duke reading.jpg"> Duke reading
-
+                  <img class="images" id="dukereading" src="images/duke reading.jpg">
+                  <div id="dukeRecepticle"></div>
                 </div>
 
                 <div id="col2">
-                  <img class="images" src="images/duke and bo.jpg"> Duke and his friend Bo
+                  <img class="images" id="dukeandbo" src="images/duke and bo.jpg">
+                  <div id="dukeandboRecepticle"></div>
 
                 </div>
 
                 <div id="col3">
 
-                  <img class="images" src="images/duke begging.jpg"> Duke begging for food
+                  <img class="images" id="dukebegging" src="images/duke begging.jpg">
+                  <div id="dukebeggingRecepticle"></div>
 
                 </div>
 
@@ -58,17 +65,20 @@
               <section id="grid2">
 
                 <div id="col4">
-                    <img class="images" src="images/duke smiling.jpg"> Duke enjoying the dog park
+                    <img class="images" id="dukesmiling" src="images/duke smiling.jpg">
+                    <div id="dukesmilingRecepticle"></div>
+
                 </div>
 
                 <div id="col5">
-                    <img class="images" src="images/duke carpet.jpg"> Duke napping
-
+                    <img class="images" id="dukecarpet" src="images/duke carpet.jpg">
+                    <div id="dukecarpetRecepticle"></div>
                 </div>
 
 
                 <div id="col6">
-                    <img class="images" src="images/duke in sand.jpg"> Duke guarding his ball
+                    <img class="images" id="dukeinsand" src="images/duke in sand.jpg">
+                    <div id="dukeinsandRecepticle"></div>
                 </div>
 
               </section>
@@ -76,18 +86,20 @@
               <section id="grid3">
 
                 <div id="col7">
-                    <img class="images" src="images/pebblescar.jpeg"> Duke's sister Pebbles
+                    <img class="images" id="pebblescar" src="images/pebblescar.jpeg">
+                    <div id="pebblescarRecepticle"></div>
                 </div>
 
                 <div id="col8">
-                    <img class="images" src="images/hope.jpeg"> Duke's friend Hope
+                    <img class="images" id="hope" src="images/hope.jpeg">
+                    <div id="hopeRecepticle"></div>
 
                 </div>
 
 
                 <div id="col9">
-                    <img class="images" src="images/bailey.jpeg"> Duke's friend Bailey
-
+                    <img class="images" id="bailey" src="images/bailey.jpeg">
+                    <div id="baileyRecepticle"></div>
 
                 </div>
 
@@ -96,18 +108,20 @@
               <section id="grid4">
 
                 <div id="col10">
-                    <img class="images" src="images/bugs.jpg"> Duke's friend Bugs
+                    <img class="images" id="bugs" src="images/bugs.jpg">
+                    <div id="bugsRecepticle"></div>
                 </div>
 
+
                 <div id="col11">
-                    <img class="images" src="images/bo.jpeg"> Duke's friend Bo
+                    <img class="images" id="bo" src="images/bo.jpeg">                  <div id="boRecepticle"></div>
 
                 </div>
 
 
                 <div id="col12">
-                    <img class="images" src="images/samson.jpeg"> Duke's brother Samson
-
+                    <img class="images" id="samson" src="images/samson.jpeg">
+                    <div id="samsonRecepticle"></div>
 
                 </div>
 
@@ -115,3 +129,117 @@
 
 
      </main>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+     <script>
+             //Write a comment
+             //Start of script
+         $(document).ready(function(){
+                 //All code should be placed below
+         $("body").css("background-color", "aliceblue");
+         $("#changeText").css("font-size", "60px");
+         $("#changeText").html("Lanna's Dog Tails");
+         $("#changeText").click(function(){
+           $("body").css("background-color", "aliceblue");
+         $("body").css("font-size", "50px");
+         });
+         $("#info").mouseenter(function(){
+             $("#dukerecepticle").html("<em> Click images for descriptions");
+             $("#info").css("background-color", "aliceblue");
+           });
+
+           $("#dukereading").click(function(){
+             $("#dukeRecepticle").html('Duke discovers that magazines are, in fact, for reading and NOT for ripping apart. He is disappointed in the lack of dog representation.');
+             $("#dukeRecepticle").css("font-size", "20px");
+           });
+           $("#dukereading").mouseleave(function(){
+             $("#dukeRecepticle").html("");
+           });
+
+           $("#dukeandbo").click(function(){
+             $("#dukeandboRecepticle").html('This is Duke and one of his closest friends Bo. Bo is a french bulldog that belongs to my friend Hannah. Bo is only a puppy and Duke treats him like his little brother!');
+               $("dukeandboRecepticle").css("font-size", "20px");
+           });
+           $("#dukeandbo").mouseleave(function(){
+             $("#dukeandboRecepticle").html("");
+           });
+           $("#dukebegging").click(function(){
+             $("#dukebeggingRecepticle").html('Duke tests his theory that whenever his human makes a snack, all he needs to do is perform a sit and look up with a straight face to get a piece');
+             $("dukebeggingRecepticle").css("font-size", "20px");
+           });
+           $("#dukebegging").mouseleave(function(){
+             $("#dukebeggingRecepticle").html("");
+           });
+           $("#dukesmiling").click(function(){
+             $("#dukesmilingRecepticle").html('Duke shows off his pearly whites after a trip to the groomer and a nice, long tooth brushing session');
+             $("dukesmilingRecepticle").css("font-size", "20px");
+           });
+           $("#dukesmiling").mouseleave(function(){
+             $("#dukesmilingRecepticle").html("");
+           });
+           $("#dukecarpet").click(function(){
+             $("#dukecarpetRecepticle").html('After spending another day working tirelessly to find the most comfortable spot in every room, Duke has carefully chosen the living room rug for his 3 pm snooze.');
+             $("dukecarpetRecepticle").css("font-size", "20px");
+           });
+           $("#dukecarpet").mouseleave(function(){
+             $("#dukecarpetRecepticle").html("");
+           });
+           $("#dukeinsand").click(function(){
+             $("#dukeinsandRecepticle").html('Despite his bath earlier that day, Duke insists the sand is the most sensible spot to start his tennis ball guarding shift.');
+             $("dukeinsandRecepticle").css("font-size", "20px");
+           });
+           $("#dukeinsand").mouseleave(function(){
+             $("#dukeinsandRecepticle").html("");
+           });
+           $("#pebblescar").click(function(){
+             $("#pebblescarRecepticle").html('Duke has a younger sister named Pebbles. She was a stray dog that came to the dog park while me and Duke were there playing. My family adopted Pebbles and now she lives in New Jersey with them!');
+             $("pebblescarRecepticle").css("font-size", "20px");
+           });
+           $("#pebblescar").mouseleave(function(){
+             $("#pebblescarRecepticle").html("");
+           });
+           $("#hope").click(function(){
+             $("#hopeRecepticle").html('This is Hope! Hope is a trained service dog that loves to play with Duke. She belongs to my friend Sydney Weber and lives in New Jersey.');
+             $("hopeRecepticle").css("font-size", "20px");
+           });
+           $("#hope").mouseleave(function(){
+             $("#hopeRecepticle").html("");
+           });
+           $("#bailey").click(function(){
+             $("#baileyRecepticle").html('This is Bailey! He is very small but very brave. It takes him some time to get brave enough to play with dogs as big as Duke but when he does, he has a blast!');
+             $("baileyRecepticle").css("font-size", "20px");
+           });
+           $("#bailey").mouseleave(function(){
+             $("#baileyRecepticle").html("");
+           });
+           $("#bugs").click(function(){
+             $("#bugsRecepticle").html('This is Bugs! Bugs was the first friend Duke made! He is a grumpy fellow and reminds me of Bernie Sanders so we call him Bugsy Sanders.');
+             $("bugsRecepticle").css("font-size", "20px");
+           });
+           $("#bugs").mouseleave(function(){
+             $("#bugsRecepticle").html("");
+           });
+           $("#bo").click(function(){
+             $("#boRecepticle").html('Bo had a photoshoot for his 3 month birthday!');
+             $("boRecepticle").css("font-size", "20px");
+           });
+           $("#bo").mouseleave(function(){
+             $("#boRecepticle").html("");
+           });
+           $("#samson").click(function(){
+             $("#samsonRecepticle").html('This is Samson, Dukes older brother. Samson lives in New Jersey and he is 5 years old. He is a sweetheart and loves when Duke comes home to visit so they can play!');
+             $("samsonRecepticle").css("font-size", "20px");
+           });
+           $("#samson").mouseleave(function(){
+             $("#samsonRecepticle").html("");
+           });
+           $("#bone").click(function(){
+             $("#boneRecepticle").html('Wanna know how to take great photos of your pup? Follow these simple instructions below: <br> 1. Make sure your pup has your focus! Bring his favorite toy or treat with you when you go take photos. <br> 2. Be patient! Your pup does not care about photos so its your job to keep their attention! <br> 3. Hold their favorite toy or treat slightly above the camera lens so their eyes are focused on the camera. <br> 4. Take as many photos as you can as quickly as you can because your dog will lose focus and patience fast! ');
+             $("boneRecepticle").css("font-size", "20px");
+           });
+        });
+
+      </script>
+
+     </body>
