@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Simple Theme</title>
-<link href="../../css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+<title>Design Page</title>
+<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
 <link href="../../jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
 <link href="../../jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
 <link href="../../jQueryAssets/jquery.ui.slider.min.css" rel="stylesheet" type="text/css">
@@ -17,57 +17,139 @@
     <![endif]-->
 <script src="../../jQueryAssets/jquery-1.11.1.min.js"></script>
 <script src="../../jQueryAssets/jquery.ui-1.10.4.slider.min.js"></script>
-	
+
 	<link href="flipping_gallery-master/flipping_gallery.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script type="text/javascript" src="../../jquery.flipping_gallery.js"></script>
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="flipping_gallery-master/jquery.flipping_gallery.js"></script>
+
   <style>
-    html {
+    /* html {
       height: 100%;
     }
-    body {
-      background: url(../../img/background.png);
-      padding: 0;
-      text-align: center;
-      font-family: 'open sans';
-      position: relative;
-      margin: 0;
-      height: 100%;
-    }
-    
-    .wrapper {
-    	height: auto !important;
-    	height: 100%;
-    	margin: 0 auto; 
-    	overflow: hidden;
-    }
-    
-    a {
-      text-decoration: none;
-    }
-    
-    
-    
-    h1, h2 {
-      width: 100%;
-      float: left;
-    }
-    h1 {
-      margin-top: 100px;
-      color: #00B0FF;
-      margin-bottom: 5px;
-      font-size: 70px;
-      letter-spacing: -4px;
-    }
-    h2 {
-      letter-spacing: 0px;
-      color: rgba(255,255,255,0.65);
-      font-weight: 100;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-    
+		.container {
+			background-color: #FFFFFF;
+			width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+			border-bottom-width: 0px;
+			padding-left: 0px;
+			padding-top: 0px;
+			padding-right: 0px;
+			padding-bottom: 0px;
+		}
+
+		.primary_header {
+			width: 100%;
+			background-color: #52bad5;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			clear: left;
+			border-bottom: 2px solid #2C9AB7;
+		}
+
+		.title {
+			font-weight: bold;
+			font-style: normal;
+			font-family: "Source Sans Pro";
+			text-align: center;
+			color: black;
+			letter-spacing: 2px;
+		}
+
+		.secondary_header {
+			width: 100%;
+			padding-top: 50px;
+			padding-bottom: 50px;
+			background-color: #B3B3B3;
+			clear: left;
+		}
+		.container .secondary_header ul {
+			margin-top: 0%;
+			margin-right: auto;
+			margin-bottom: 0px;
+			margin-left: auto;
+			padding-top: 0px;
+			padding-right: 0px;
+			padding-bottom: 15px;
+			padding-left: 0px;
+			width: 100%;
+		}
+		.secondary_header ul li {
+			list-style: none;
+			float: left;
+			margin-right: auto;
+			margin-top: 0px;
+			font-family: "Source Sans Pro";
+			font-weight: normal;
+			color: #FFFFFF;
+			letter-spacing: 1px;
+			margin-left: auto;
+			text-align: center;
+			width: 16%;
+			transition: all 0.3s linear;
+		}
+		.secondary_header ul li:hover {
+			color: #717070;
+			cursor: pointer;
+		}
+
+		.footer {
+			background-color: #717070;
+		}
+
+		body {
+			background: url(../../img/background.png);
+			padding: 0;
+			text-align: center;
+			font-family: 'open sans';
+			position: relative;
+			margin: 0;
+			height: 100%;
+		}
+
+		.wrapper {
+			height: auto !important;
+			height: 100%;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+
+
+		h1, h2 {
+			width: 100%;
+			float: left;
+		}
+		h1 {
+			margin-top: 100px;
+			color: #00B0FF;
+			margin-bottom: 5px;
+			font-size: 70px;
+			letter-spacing: -4px;
+		}
+		h2 {
+			letter-spacing: 0px;
+			color: rgba(255,255,255,0.65);
+			font-weight: 100;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+
+*/
+.wrapper {
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
     .pointer {
       color: #00B0FF;
       font-family: 'Pacifico';
@@ -104,8 +186,8 @@
       width: 100%;
       margin: 0 auto;
     }
-    
-    
+
+
     .main h1 {
       padding:20px 50px 10px;
       float: left;
@@ -122,11 +204,11 @@
       letter-spacing: 2px;
       text-transform: capitalize;
     }
-   
+
     .main h1.demo1 {
       background: #1ABC9C;
     }
-    
+
     .reload.bell {
       font-size: 12px;
       padding: 20px;
@@ -137,12 +219,12 @@
       -webkit-border-radius: 50px;
       -moz-border-radius: 50px;
     }
-    
+
     .reload.bell #notification {
       font-size: 25px;
       line-height: 140%;
     }
-    
+
     .reload, .btn{
       display: inline-block;
       border: 4px solid #A2261E;
@@ -198,7 +280,7 @@
       font-weight: bold;
       color: rgba(255,255,255,0.55);
     }
-    
+
     .back {
       position: absolute;
       top: 0;
@@ -222,68 +304,54 @@
     .back:hover {
       background: rgba(0,0,0,0.5);
     }
-  
-    
+
+
     .page-container {
       max-width: 700px;
       margin: auto;
       position: relative;
     }
-    
+
     .page-container p{
       font-size: 21px;
       font-weight: 100;
       line-height: 180%;
     }
-    
+
     .page-container h3 {
       font-family: "noto serif";
       font-size: 23px;
     }
-    
+
     .gallery {
       width: 500px;
-      height: 333px;
+      height: 650px;
       margin: 150px auto 100px;
     }
-    
+
     .navigation {
-      margin-bottom: 150px;
+      margin-bottom: 1px;
+			margin-left: 100px;
     }
-    
+
     .fg-card, .fg-card > img {
       border-radius: 3px;
     }
-    
+
     .fg-caption {
-      color: white;
+      color: black;
       font-style: italic;
       font-family:noto serif;
       font-size: 24px;
     }
-    
+
 	</style>
-	<script>
-	  $(document).ready( function() {
-	    $(".gallery").flipping_gallery({
-	      enableScroll: true,
-	      autoplay: 2000
-	    });
-	    
-	    $(".next").click(function() {
-	      $(".gallery").flipForward();
-	      return false;
-	    });
-	    $(".prev").click(function() {
-	      $(".gallery").flipBackward();
-	      return false;
-	    });
-	  });
-		
-	</script>
+
+
+
 </head>
 <body>
-	
+
 <div class="container">
   <header>
     <div class="primary_header">
@@ -302,90 +370,69 @@
   </header>
 </head>
 <body>
-	
+
   <div class="wrapper">
 	  <div class="main">
 	    <div class="header">
         <div class="btns">
   	    </div>
   	  </div>
-  	  
+
       <div class="page-container">
-      <div class="pointer2">Click Me</div>  
-      <div class="pointer">Scroll Me</div>  
+      <div class="pointer2">Click Me</div>
+      <div class="pointer">Scroll Me</div>
         <div class="gallery">
-          <a href="#" data-caption="Scoop Logo"><img src="images/scooplogo.png"></a>
-          <a href="#" data-caption="Scoop Ad"><img src="images/logo and ad project-02.jpg"></a>
-          <a href="#" data-caption="Scoop Brochure"><img src="images/brochure.jpg"></a>
-          <a href="#" data-caption="Magazine Cover"><img src="images/cover.jpg"></a>
-          <a href="#" data-caption="MLMA Spread 1"><img src="images/mlmaspread1.jpg"></a>
-          <a href="#" data-caption="MLMA Spread 2"><img src="images/mlmaspread2.jpg"></a>
-          <a href="#" data-caption="Jordyn Spread 1"><img src="images/jordanspread1.jpg"></a>
-          <a href="#" data-caption="Jordyn Spread 2"><img src="images/jordynspread2.jpg"></a>
-          <a href="#" data-caption="Infographic"><img src="images/infographicproject copy.jpg"img/4.jpg"></a>
-        
+          <a href="#" data-caption="Scoop Logo. I designed a Logo for a female-only ridesharing company called Scoop."><img src="images/scooplogo.png" width="500"></a>
+          <a href="#" data-caption="Scoop Ad. A flyer I designed for a female-only ridesharing company called Scoop."><img src="images/logo and ad project-02.jpg" width="500"></a>
+          <a href="#" data-caption="Scoop Brochure. I desigend a brochure for a female-only ridesharing company called Scoop."><img src="images/brochure.jpg" width="500"></a>
+          <a href="#" data-caption="Magazine Cover. I created my own magazine titled 'Influencer'."><img src="images/cover.jpg" width="500"></a>
+          <a href="#" data-caption="MLMA Spread 1. A mock magazine spread featuring artist melovemealot"><img src="images/mlmaspread1.jpg" width="500"></a>
+          <a href="#" data-caption="MLMA Spread 2. A mock magazine spread featuring artist melovemealot"><img src="images/mlmaspread2.jpg" width="500"></a>
+          <a href="#" data-caption="Jordyn Spread 1. A mock magazine spread featuring model Jordyn Woods"><img src="images/jordanspread1.jpg" width="500"></a>
+          <a href="#" data-caption="Jordyn Spread 2. A mock magazine spread featuring model Jordyn Woods"><img src="images/jordynspread2.jpg" width="500"></a>
+          <a href="#" data-caption="Infographic. An infographic I desigend about the 2018 Midterm Senate elections in Texas."><img src="images/infographicproject copy.jpg" width="500"></a>
+
         </div>
-        
+
+				<br>
+				<br>
+				<br>
+
 
         <div class="navigation">
           <a href="#" class="btn prev">Previous</a>
           <a href="#" class="btn next">Next</a>
         </div>
       </div>
-  
+
 </body>
 </html>
-  <section>
-    <h2 class="noDisplay">Main Content</h2>
-    <article class="left_article">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </article>
-    <aside class="right_article"><img src="../../images/placeholder.jpg" alt="" width="400" height="200" class="placeholder"/> </aside>
-  </section>
-  <div class="row">
-    <div class="columns">
-      <p class="thumbnail_align"> <img src="../../images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
-      <h4>TITLE</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-    </div>
-    <div class="columns">
-      <p class="thumbnail_align"> <img src="../../images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
-      <h4>TITLE</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-    </div>
-    <div class="columns">
-      <p class="thumbnail_align"> <img src="../../images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
-      <h4>TITLE</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-    </div>
-    <div class="columns">
-      <p class="thumbnail_align"> <img src="../../images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
-      <h4>TITLE</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-    </div>
-  </div>
-  <div class="row blockDisplay">
-    <div class="column_half left_half">
-      <h2 class="column_title">LEFT COLUMN</h2>
-    </div>
-    <div class="column_half right_half">
-      <h2 class="column_title">RIGHT COLUMN</h2>
-    </div>
-  </div>
-  <div class="social">
-    <p class="social_icon"><img src="../../images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-    <p class="social_icon"><img src="../../images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-    <p class="social_icon"><img src="../../images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-    <p class="social_icon"><img src="../../images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-  </div>
+
+
   <footer class="secondary_header footer">
     <div class="copyright">&copy;2015 - <strong>SIMPLE Theme</strong></div>
   </footer>
 </div>
 <script type="text/javascript">
-$(function() {
-	$( "#Slider1" ).slider(); 
+
+$(document).ready( function() {
+	$(".gallery").flipping_gallery({
+		enableScroll: true,
+	});
+
+	$(".next").click(function() {
+		$(".gallery").flipForward();
+		return false;
+	});
+	$(".prev").click(function() {
+		$(".gallery").flipBackward();
+		return false;
+	});
+
+	$( "#Slider1" ).slider();
 });
 </script>
+
+
 </body>
 </html>
